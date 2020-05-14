@@ -6,7 +6,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Git Training',
       theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+       // visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Home(),
     );

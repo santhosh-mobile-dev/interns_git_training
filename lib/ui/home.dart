@@ -3,7 +3,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(color: Colors.blueGrey,),
+      body: Container(color: Colors.blueGrey,child: Center(child: Text("Home Screen"),),),
     );
   }
 }

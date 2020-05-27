@@ -4,5 +4,3 @@ import 'package:internsgittraining/app.dart';
 void main() {
   runApp(App());
 }
-
-

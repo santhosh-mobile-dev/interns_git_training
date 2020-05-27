@@ -17,7 +17,8 @@ class AppColors {
   Color secondaryLight;
 
   AppColors(); //Empty Constructor
-  factory AppColors.opsColors() { //Named Constructor
+  factory AppColors.opsColors() {
+    //Named Constructor
     AppColors colors = AppColors();
     colors.primary = Color.fromRGBO(1, 96, 162, 1.0);
     colors.primaryDark = Color.fromRGBO(0, 74, 152, 1.0);
@@ -27,7 +28,6 @@ class AppColors {
     colors.secondaryLight = Color.fromRGBO(193, 193, 193, 1.0);
     return colors;
   }
-
 }
 
 final opsColors = AppColors.opsColors();

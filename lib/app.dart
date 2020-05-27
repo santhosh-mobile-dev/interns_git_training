@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:internsgittraining/ui/home.dart';
+import 'package:internsgittraining/ui/login.dart';
+
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,7 +9,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(),
+      home: Login(),
     );
   }
 }

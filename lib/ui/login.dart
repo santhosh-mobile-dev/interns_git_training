@@ -8,6 +8,8 @@ class Login extends StatelessWidget {
   TextEditingController userNameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
+
+
   Widget sizedBoxH16() {
     return SizedBox(
       height: 16.0,
@@ -21,17 +23,19 @@ class Login extends StatelessWidget {
   }
 
   Widget signInButton(BuildContext context) {
+    String userName;
     return RaisedButton(
       color: opsTheme.buttonColor,
       child: Text(
         CustomMessages.signInText,
       ),
       onPressed: () {
+        userName = userNameController.text.trim();
         print(
             "User Name : ${userNameController.text.trim()} and Password: ${passwordController.text.trim()}");
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Home(username: userNameController.text.trim(),)),
+          MaterialPageRoute(builder: (context) => Home(username: userName)),
         );
       },
     );

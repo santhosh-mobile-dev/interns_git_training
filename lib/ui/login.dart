@@ -31,7 +31,7 @@ class Login extends StatelessWidget {
             "User Name : ${userNameController.text.trim()} and Password: ${passwordController.text.trim()}");
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Home()),
+          MaterialPageRoute(builder: (context) => Home(username: userNameController.text.trim(),)),
         );
       },
     );
